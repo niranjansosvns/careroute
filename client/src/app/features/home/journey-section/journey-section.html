@@ -1,0 +1,10 @@
+<section class="journey-section" id="journey">
+  <div class="shell">
+    <div class="section-head"><div><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2></div><p>{{ content().introduction }}</p></div>
+    <div class="steps">
+      @for (step of content().steps; track step.title; let index = $index) {
+        <article class="step"><span class="step-no">{{ (index + 1).toString().padStart(2, '0') }}</span><h3>{{ step.title }}</h3><p>{{ step.description }}</p></article>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+<div class="topline">
+  <div class="shell top-inner">
+    @for (contact of content().contacts; track contact.href) {
+      <a [href]="contact.href">{{ contact.label }}</a>
+    }
+  </div>
+</div>
+<header class="nav-shell">
+  <div class="shell nav">
+    <a class="brand" routerLink="/" [attr.aria-label]="brand().name + ' home'" (click)="closeMenu()">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span><span class="brand-name">{{ brand().name }}</span><span class="brand-tag">{{ brand().tagline }}</span></span>
+    </a>
+    <button class="menu-toggle" type="button" [attr.aria-expanded]="menuOpen()" [attr.aria-label]="menuOpen() ? content().menuCloseLabel : content().menuOpenLabel" (click)="toggleMenu()">☰</button>
+    <nav class="nav-links" [class.open]="menuOpen()" [attr.aria-label]="content().navigationLabel">
+      @for (link of content().links; track link.href) {
+        @if (link.children?.length) {
+          <div class="nav-group" [class.group-open]="openGroup() === link.label">
+            <button class="nav-group-trigger" type="button" [attr.aria-expanded]="openGroup() === link.label" (click)="toggleGroup(link.label)">{{ link.label }} <span aria-hidden="true">⌄</span></button>
+            @if (openGroup() === link.label) {
+              <div class="nav-dropdown">
+                @for (child of link.children; track child.href) { <a [routerLink]="child.href" (click)="closeMenu()">{{ child.label }}</a> }
+              </div>
+            }
+          </div>
+        } @else {
+          <a [routerLink]="link.href" (click)="closeMenu()">{{ link.label }}</a>
+        }
+      }
+      <button class="search-trigger" type="button" [attr.aria-expanded]="searchOpen()" (click)="toggleSearch()">{{ content().searchLabel }}</button>
+      <a class="button button-small" routerLink="/pages/contact" (click)="closeMenu()">{{ content().ctaLabel }} <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+@if (searchOpen()) {
+  <form class="site-search shell" (submit)="$event.preventDefault(); submitSearch(searchInput.value)">
+    <label class="visually-hidden" for="site-search-input">{{ content().searchLabel }}</label>
+    <input #searchInput id="site-search-input" type="search" [placeholder]="content().searchPlaceholder" autofocus>
+    <button class="button button-small" type="submit">{{ content().searchLabel }}</button>
+  </form>
+}

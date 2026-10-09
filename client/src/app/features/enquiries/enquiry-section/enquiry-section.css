@@ -1,0 +1,12 @@
+.enquiry-section { padding: 93px 0; background: #e9f0e9; }
+.enquiry-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 75px; align-items: start; }
+.eyebrow { margin: 0 0 16px; color: var(--accent-dark); font-size: 10px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.enquiry-copy h2 { margin: 0; font: 500 48px/1.1 var(--serif); }
+.enquiry-copy > p:not(.eyebrow) { max-width: 350px; color: var(--muted); font-size: 12px; }
+.contact-lines { display: grid; gap: 13px; margin-top: 28px; }
+.contact-lines a { display: block; }
+.contact-lines b, .contact-lines span { display: block; }
+.contact-lines b { font-size: 11px; }
+.contact-lines span { color: var(--muted); font-size: 10px; }
+@media (max-width: 900px) { .enquiry-grid { gap: 40px; } .enquiry-copy h2 { font-size: 45px; } }
+@media (max-width: 680px) { .enquiry-section { padding: 64px 0; } .enquiry-grid { grid-template-columns: 1fr; gap: 28px; } .enquiry-copy h2 { font-size: 39px; } }

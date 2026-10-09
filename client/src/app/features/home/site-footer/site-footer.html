@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" routerLink="/"><span class="brand-mark" aria-hidden="true">+</span><span><span class="brand-name">{{ brand().name }}</span><span class="brand-tag">{{ brand().tagline }}</span></span></a><p class="footer-about">{{ content().description }}</p></div>
+      <div class="footer-col"><h3>{{ content().exploreLabel }}</h3>@for (link of exploreLinks(); track link.href) { <a [routerLink]="link.href">{{ link.label }}</a> }</div>
+      <div class="footer-col"><h3>{{ content().contactLabel }}</h3>@for (contact of header().contacts; track contact.href) { <a [href]="contact.href">{{ contact.label }}</a> }<a routerLink="/pages/faq">{{ content().commonQuestionsLabel }}</a></div>
+    </div>
+    <div class="footer-bottom"><span>{{ content().copyright }}</span><span>{{ content().disclaimer }}</span></div>
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+.care-areas-section { padding: 88px 0; background: var(--paper); }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 38px; }
+.section-head h2 { max-width: 640px; margin: 0; font: 500 48px/1.12 var(--serif); }
+.section-head > p { max-width: 330px; margin: 0 0 3px; color: var(--muted); font-size: 12px; }
+.pathway-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.pathway { position: relative; min-height: 178px; display: flex; flex-direction: column; justify-content: space-between; padding: 21px; border: 1px solid var(--line); background: var(--white); transition: border-color .2s, transform .2s; }
+.pathway:hover { transform: translateY(-3px); border-color: var(--sage-deep); }
+.pathway-index { color: var(--accent-dark); font-size: 10px; font-weight: 700; }
+.pathway h3 { max-width: 245px; margin: 21px 0 7px; font: 500 21px/1.2 var(--serif); }
+.pathway p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+.pathway-arrow { position: absolute; right: 18px; bottom: 18px; color: var(--accent); font-size: 17px; transition: transform .2s; }
+.pathway:hover .pathway-arrow { transform: translate(2px, -2px); }
+@media (max-width: 900px) { .section-head h2 { font-size: 43px; } }
+@media (max-width: 680px) {
+  .care-areas-section { padding: 62px 0; }
+  .section-head { display: block; margin-bottom: 26px; }
+  .section-head h2 { font-size: 38px; }
+  .section-head > p { margin-top: 12px; }
+  .pathway-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pathway { min-height: 166px; padding: 15px; }
+  .pathway h3 { margin-top: 18px; font-size: 17px; }
+  .pathway-arrow { right: 12px; bottom: 12px; }
+}

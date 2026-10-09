@@ -1,0 +1,10 @@
+<section class="care-areas-section" id="care-areas">
+  <div class="shell">
+    <div class="section-head"><div><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2></div><p>{{ content().introduction }}</p></div>
+    <div class="pathway-grid">
+      @for (pathway of content().items; track pathway.title; let index = $index) {
+        <a class="pathway" href="#enquiry"><span class="pathway-index">{{ (index + 1).toString().padStart(2, '0') }} / {{ pathway.group }}</span><div><h3>{{ pathway.title }}</h3><p>{{ pathway.description }}</p></div><span class="pathway-arrow" aria-hidden="true">↗</span></a>
+      }
+    </div>
+  </div>
+</section>

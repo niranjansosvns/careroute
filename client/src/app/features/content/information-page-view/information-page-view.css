@@ -1,0 +1,12 @@
+.info-page { min-height: 60vh; padding-top: 70px; padding-bottom: 80px; }
+.info-heading { max-width: 820px; margin-bottom: 38px; }
+.eyebrow { margin: 0 0 12px; color: var(--accent-dark); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.info-heading h1 { margin: 0; font: 500 54px/1.1 var(--serif); }
+.info-heading > p:last-child { max-width: 700px; margin: 15px 0 0; color: var(--muted); font: 500 17px/1.6 var(--serif); }
+.info-sections { max-width: 840px; }
+.info-section { padding: 23px 0; border-top: 1px solid var(--line); }
+.info-section h2 { margin: 0 0 12px; font: 500 25px/1.2 var(--serif); }
+.info-section p, .info-section li { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.info-section ul { padding-left: 20px; }
+.demo-notice { max-width: 840px; margin: 18px 0; padding: 13px 15px; border-left: 3px solid var(--sage-deep); background: var(--sage); color: #46584b; font-size: 10px; }
+@media (max-width: 650px) { .info-page { padding-top: 42px; } .info-heading h1 { font-size: 41px; } }

@@ -1,0 +1,14 @@
+<main class="search-page shell">
+  <header class="search-heading"><p class="eyebrow">{{ pageContent().portalUi.searchTitle }}</p><h1>{{ search().query || pageContent().portalUi.searchTitle }}</h1>@if (hasQuery()) { <p>{{ search().total }} {{ search().total === 1 ? pageContent().portalUi.resultSingular : pageContent().portalUi.resultPlural }}</p> }</header>
+  @if (!hasQuery()) {
+    <div class="search-empty">{{ pageContent().portalUi.noSearchQuery }}</div>
+  } @else if (search().results.length) {
+    <section class="search-results">
+      @for (result of search().results; track result.collection + result.item.slug) {
+        <a class="search-result" [routerLink]="['/directory', result.collection, result.item.slug]"><span class="result-type">{{ result.label }} · {{ result.item.category }}</span><h2>{{ result.item.title }}</h2><p>{{ result.item.summary }}</p><span class="result-link">{{ pageContent().portalUi.viewDetailsLabel }} ↗</span></a>
+      }
+    </section>
+  } @else {
+    <div class="search-empty"><h2>{{ pageContent().portalUi.emptyTitle }}</h2><p>{{ pageContent().portalUi.emptyDescription }}</p><a class="button" routerLink="/">{{ pageContent().portalUi.homeLinkLabel }}</a></div>
+  }
+</main>

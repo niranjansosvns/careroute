@@ -1,0 +1,16 @@
+{
+  "name": "careroute-medical-travel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail -n api,web -c green,blue \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm --prefix server run dev",
+    "dev:web": "npm --prefix client start -- --proxy-config proxy.conf.json",
+    "build": "npm --prefix client run build",
+    "build:github-pages": "node scripts/prepare-static-content.mjs && npm --prefix client run build -- --configuration production,github-pages && node scripts/finalize-github-pages.mjs",
+    "start:api": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

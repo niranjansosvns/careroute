@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "title": "CareRoute | A clearer way to care",
+    "description": "Thoughtful coordination for international patients exploring medical care in India.",
+    "themeColor": "#f8f8f4"
+  },
+  "apiMessages": {
+    "invalidEnquiry": "Review the required fields and try again.",
+    "emailUnavailable": "Email notifications are not configured. Please contact the site administrator.",
+    "invalidJson": "The request could not be read. Check the submitted data and try again.",
+    "invalidOrigin": "This request origin is not allowed.",
+    "notFound": "This API route could not be found.",
+    "rateLimit": "Too many requests. Please try again later.",
+    "serverError": "We could not complete this request. Please try again later."
+  },
+  "brand": {
+    "name": "CareRoute",
+    "tagline": "Care, thoughtfully coordinated"
+  },
+  "header": {
+    "contacts": [
+      { "label": "+91 11 4000 2080", "href": "tel:+911140002080" },
+      { "label": "care@careroute.example", "href": "mailto:care@careroute.example" }
+    ],
+    "navigationLabel": "Main navigation",
+    "menuOpenLabel": "Open navigation",
+    "menuCloseLabel": "Close navigation",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search care, hospitals, doctors…",
+    "links": [
+      {
+        "label": "Treatments",
+        "href": "/directory/treatments",
+        "children": [
+          { "label": "All treatments", "href": "/directory/treatments" },
+          { "label": "Procedures", "href": "/directory/procedures" },
+          { "label": "Treatment costs", "href": "/directory/treatment-costs" }
+        ]
+      },
+      {
+        "label": "Providers",
+        "href": "/directory/hospitals",
+        "children": [
+          { "label": "Hospitals", "href": "/directory/hospitals" },
+          { "label": "Doctors", "href": "/directory/doctors" }
+        ]
+      },
+      { "label": "Services", "href": "/directory/services" },
+      {
+        "label": "Explore",
+        "href": "/directory/destinations",
+        "children": [
+          { "label": "Destinations", "href": "/directory/destinations" },
+          { "label": "Resources", "href": "/directory/resources" },
+          { "label": "Patient journey", "href": "/pages/patient-journey" },
+          { "label": "Medical visa guide", "href": "/pages/medical-visa" },
+          { "label": "Why consider India", "href": "/pages/why-india" }
+        ]
+      },
+      {
+        "label": "About",
+        "href": "/pages/about",
+        "children": [
+          { "label": "About CareRoute", "href": "/pages/about" },
+          { "label": "FAQs", "href": "/pages/faq" },
+          { "label": "Contact", "href": "/pages/contact" },
+          { "label": "Editorial policy", "href": "/pages/editorial-policy" },
+          { "label": "Privacy", "href": "/pages/privacy" },
+          { "label": "Terms", "href": "/pages/terms" },
+          { "label": "Medical disclaimer", "href": "/pages/medical-disclaimer" },
+          { "label": "Secure records", "href": "/pages/secure-records" }
+        ]
+      }
+    ],
+    "ctaLabel": "Start an enquiry"
+  },
+  "hero": {
+    "eyebrow": "International care · Thoughtfully coordinated",
+    "title": "A clearer way to find care.",
+    "emphasis": "A kinder way to get there.",
+    "description": "From exploring specialist options to planning the journey, one responsive team helps make every practical step feel more manageable.",
+    "primaryAction": "Talk with a care coordinator",
+    "secondaryAction": "See how it works",
+    "note": "Independent coordination. Clinical decisions stay with your doctor.",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=85",
+    "imageAlt": "Doctor speaking with a patient in a bright consultation room",
+    "imageEyebrow": "Care coordination, made human",
+    "imageCaption": "Here for the steps around care.",
+    "supportTitle": "Support at every step",
+    "supportCaption": "Before · during · after",
+    "proof": [
+      { "value": "One", "label": "dedicated coordinator" },
+      { "value": "End to end", "label": "travel and hospital support" },
+      { "value": "Always clear", "label": "non-clinical guidance" }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Your coordinated pathway",
+    "title": "From first question to journey home.",
+    "introduction": "Practical support organized around your priorities, with your choices and care team at the centre.",
+    "steps": [
+      { "title": "Tell us what you need", "description": "Share a general overview of your care goals and preferred way to connect." },
+      { "title": "Explore suitable options", "description": "We help identify relevant specialties and coordinate provider conversations." },
+      { "title": "Plan the practical details", "description": "Appointments, travel, accommodation and language support, in one plan." },
+      { "title": "Feel supported throughout", "description": "Stay connected through arrival, hospital visits and your return home." }
+    ]
+  },
+  "services": {
+    "eyebrow": "The details around treatment",
+    "title": "Everything around care, coordinated.",
+    "introduction": "Eight practical support areas that connect the clinical plan with a more considered patient journey.",
+    "items": [
+      { "title": "Patient care support", "description": "A dedicated point of contact for patients and their families." },
+      { "title": "Appointment coordination", "description": "Connect with relevant specialists and selected providers." },
+      { "title": "Medical visa guidance", "description": "Understand invitation letters and travel documentation steps." },
+      { "title": "Travel planning", "description": "Compare routes and timing around confirmed appointments." },
+      { "title": "Airport transfers", "description": "Pre-arranged local transport between airport, stay and hospital." },
+      { "title": "Accommodation help", "description": "Find a comfortable stay that fits your needs and location." },
+      { "title": "Hospital assistance", "description": "Navigate appointments, admissions and everyday logistics." },
+      { "title": "Interpreter support", "description": "Coordinate language help for clearer conversations." }
+    ]
+  },
+  "careAreas": {
+    "eyebrow": "Care areas",
+    "title": "Specialist pathways, shaped around you.",
+    "introduction": "Explore common areas of care. The right clinical options depend on an individual review by a qualified provider.",
+    "items": [
+      { "group": "SURGICAL CARE", "title": "Robotic and minimally invasive surgery", "description": "Evaluation and specialist coordination" },
+      { "group": "TRANSPLANT", "title": "Organ and stem cell programmes", "description": "Eligibility and provider coordination" },
+      { "group": "HEART", "title": "Cardiology and cardiac surgery", "description": "Assessment, intervention and surgery" },
+      { "group": "ONCOLOGY", "title": "Cancer care and oncology", "description": "Multidisciplinary treatment pathways" },
+      { "group": "BONES & JOINTS", "title": "Orthopaedics and spine", "description": "Joint, spine and rehabilitation needs" },
+      { "group": "MORE SPECIALTIES", "title": "Neurology, fertility and more", "description": "Explore a broad range of specialties" }
+    ]
+  },
+  "providers": {
+    "eyebrow": "Provider discovery",
+    "title": "Find a care setting that fits.",
+    "introduction": "Explore provider options by location and specialty, then make an informed choice with your clinical team.",
+    "actionLabel": "Explore options",
+    "disclaimer": "Sample regions for demonstration only. Provider availability and credentials must be confirmed. Listing does not imply affiliation or guaranteed admission.",
+    "items": [
+      { "city": "Delhi NCR", "focus": "Multispecialty and advanced care", "region": "North India" },
+      { "city": "Mumbai", "focus": "Specialist and surgical programmes", "region": "West India" },
+      { "city": "Chennai", "focus": "Cardiac, oncology and multispecialty", "region": "South India" }
+    ]
+  },
+  "values": {
+    "eyebrow": "How we work",
+    "title": "Patient needs shape every decision.",
+    "introduction": "Clear communication and thoughtful coordination, from the first conversation onward.",
+    "items": [
+      { "title": "Patient choice", "description": "Options are presented without pressure to commit." },
+      { "title": "Clear expectations", "description": "Separate confirmed details from estimates and unknowns." },
+      { "title": "Cultural respect", "description": "Make space for language, family and personal preferences." },
+      { "title": "Practical continuity", "description": "One contact to help coordinate the moving pieces." },
+      { "title": "Provider-led decisions", "description": "Medical advice and treatment decisions stay with clinicians." },
+      { "title": "Thoughtful communication", "description": "Know what comes next and who is responsible for it." }
+    ]
+  },
+  "enquiry": {
+    "eyebrow": "Start a care enquiry",
+    "title": "Let’s understand what would help.",
+    "description": "Share a brief, general description and a coordinator will get back to you. No medical files or passport details here.",
+    "contacts": [
+      { "label": "care@careroute.example", "detail": "For general coordination enquiries", "href": "mailto:care@careroute.example" },
+      { "label": "+91 11 4000 2080", "detail": "Monday to Saturday · 9 am to 6 pm IST", "href": "tel:+911140002080" }
+    ],
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "phoneLabel": "Phone or WhatsApp",
+      "phoneOptional": "optional",
+      "phonePlaceholder": "Include country code",
+      "careAreaLabel": "Area of care",
+      "careAreaPlaceholder": "Select an area",
+      "messageLabel": "How can we assist?",
+      "messageOptional": "optional",
+      "messagePlaceholder": "A general description only. Please do not include private medical details.",
+      "consentLabel": "I agree to be contacted about my care coordination enquiry.",
+      "submitLabel": "Send enquiry",
+      "submittingLabel": "Sending…",
+      "nameError": "Enter your name.",
+      "emailError": "Enter a valid email address.",
+      "careAreaError": "Choose an area of care.",
+      "consentError": "Consent is required before we can contact you.",
+      "successMessage": "Thank you. Your enquiry has been received.",
+      "serverError": "We could not send your enquiry. Please try again shortly.",
+      "mailtoSuccessMessage": "Your email app should open with this enquiry addressed. Review and send the email to complete your request.",
+      "privacyNote": "Please do not submit medical files, diagnoses, passport details, or other sensitive information. For emergencies, contact local emergency services.",
+      "careAreas": [
+        "Cardiology",
+        "Cancer care",
+        "Orthopaedics and spine",
+        "Transplant programmes",
+        "Neurology",
+        "Women and children",
+        "Other / not sure yet"
+      ]
+    }
+  },
+  "faq": {
+    "eyebrow": "A few useful answers",
+    "title": "Questions patients often ask.",
+    "items": [
+      { "question": "What does a care coordinator do?", "answer": "A coordinator can help with practical arrangements such as appointments, travel, accommodation and communication. They do not diagnose conditions or provide medical treatment." },
+      { "question": "Can you recommend a treatment?", "answer": "No. Diagnosis, treatment recommendations, risks and clinical decisions belong to qualified healthcare professionals who know your case." },
+      { "question": "Can you guarantee a cost or outcome?", "answer": "No. Estimates, availability and outcomes depend on the provider and individual case. Request a current written estimate directly from the treating provider." },
+      { "question": "Should I send my medical records here?", "answer": "Please do not send medical files, passport information or other sensitive documents through this general enquiry form. A secure process should be provided if records are needed." }
+    ]
+  },
+  "callToAction": {
+    "title": "Take the next step at your pace.",
+    "description": "A conversation can start with a question, not a commitment.",
+    "actionLabel": "Start an enquiry"
+  },
+  "footer": {
+    "description": "Practical support for international patients exploring care in India. Medical decisions always remain with the patient and qualified providers.",
+    "exploreLabel": "Explore",
+    "contactLabel": "Contact",
+    "commonQuestionsLabel": "Common questions",
+    "copyright": "© 2026 CareRoute. Replace sample identity and contact details before launch.",
+    "disclaimer": "Not an emergency service · Medical disclaimer"
+  },
+  "portalUi": {
+    "searchTitle": "Search CareRoute",
+    "searchSubmitLabel": "Search",
+    "directorySearchLabel": "Filter results",
+    "directorySearchPlaceholder": "Search this directory",
+    "categoryLabel": "Category",
+    "allCategoriesLabel": "All categories",
+    "resultSingular": "result",
+    "resultPlural": "results",
+    "emptyTitle": "No matching results",
+    "emptyDescription": "Try changing your search or category filter.",
+    "clearFiltersLabel": "Clear filters",
+    "viewDetailsLabel": "View details",
+    "backToDirectoryLabel": "Back to directory",
+    "detailsHeading": "Overview",
+    "highlightsHeading": "Key details",
+    "demoNotice": "Demonstration content only. Verify providers, credentials, availability and quotations independently before making decisions.",
+    "sampleListingLabel": "Sample listing",
+    "locationLabel": "Location",
+    "requestInformationLabel": "Ask about this option",
+    "missingPageTitle": "We couldn’t find that page",
+    "missingPageDescription": "The link may have changed or the page may not be available.",
+    "homeLinkLabel": "Return home",
+    "noSearchQuery": "Enter a search term to find matching care information.",
+    "directoryLabels": {
+      "treatments": "Treatments",
+      "procedures": "Procedures",
+      "treatment-costs": "Treatment costs",
+      "hospitals": "Hospitals",
+      "doctors": "Doctors",
+      "services": "Services",
+      "destinations": "Destinations",
+      "resources": "Resources"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<section class="faq-section" id="faq">
+  <div class="shell faq-layout">
+    <div><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2></div>
+    <div class="faq-list">
+      @for (faq of content().items; track faq.question) {
+        <details class="faq"><summary>{{ faq.question }}</summary><p>{{ faq.answer }}</p></details>
+      }
+    </div>
+  </div>
+</section>

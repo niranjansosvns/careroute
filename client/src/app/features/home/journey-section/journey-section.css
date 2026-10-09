@@ -1,0 +1,23 @@
+.journey-section { padding: 88px 0; background: var(--white); }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 38px; }
+.section-head h2 { max-width: 640px; margin: 0; font: 500 48px/1.12 var(--serif); }
+.section-head > p { max-width: 330px; margin: 0 0 3px; color: var(--muted); font-size: 12px; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.step { min-height: 204px; padding: 23px 22px 24px 0; }
+.step + .step { padding-left: 22px; border-left: 1px solid var(--line); }
+.step-no { color: var(--accent-dark); font-size: 10px; font-weight: 700; letter-spacing: .5px; }
+.step h3 { margin: 26px 0 8px; font: 500 20px/1.2 var(--serif); }
+.step p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+@media (max-width: 900px) { .section-head h2 { font-size: 43px; } }
+@media (max-width: 680px) {
+  .journey-section { padding: 62px 0; }
+  .section-head { display: block; margin-bottom: 26px; }
+  .section-head h2 { font-size: 38px; }
+  .section-head > p { margin-top: 12px; }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step { min-height: 171px; padding: 17px 12px 18px 0; }
+  .step + .step { padding-left: 12px; }
+  .step:nth-child(3) { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+  .step:nth-child(4) { border-top: 1px solid var(--line); }
+  .step h3 { margin-top: 19px; font-size: 18px; }
+}

@@ -1,0 +1,12 @@
+<form class="enquiry-form" [formGroup]="form" (ngSubmit)="submitEnquiry()" appFocusFirstInvalid novalidate>
+  <div class="field"><label for="name">{{ content().nameLabel }}</label><input id="name" formControlName="name" autocomplete="name" [placeholder]="content().namePlaceholder" [attr.aria-invalid]="isInvalid('name')">@if (isInvalid('name')) { <small aria-live="polite">{{ content().nameError }}</small> }</div>
+  <div class="field"><label for="email">{{ content().emailLabel }}</label><input id="email" type="email" formControlName="email" autocomplete="email" [placeholder]="content().emailPlaceholder" [attr.aria-invalid]="isInvalid('email')">@if (isInvalid('email')) { <small aria-live="polite">{{ content().emailError }}</small> }</div>
+  <div class="field"><label for="phone">{{ content().phoneLabel }} <span>({{ content().phoneOptional }})</span></label><input id="phone" type="tel" formControlName="phone" autocomplete="tel" [placeholder]="content().phonePlaceholder"></div>
+  <div class="field"><label for="careArea">{{ content().careAreaLabel }}</label><select id="careArea" formControlName="careArea" [attr.aria-invalid]="isInvalid('careArea')"><option value="">{{ content().careAreaPlaceholder }}</option>@for (area of content().careAreas; track area) { <option [value]="area">{{ area }}</option> }</select>@if (isInvalid('careArea')) { <small aria-live="polite">{{ content().careAreaError }}</small> }</div>
+  <div class="field full"><label for="message">{{ content().messageLabel }} <span>({{ content().messageOptional }})</span></label><textarea id="message" formControlName="message" maxlength="500" [placeholder]="content().messagePlaceholder"></textarea></div>
+  <input class="honeypot" type="text" formControlName="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label class="consent full"><input type="checkbox" formControlName="consent"><span>{{ content().consentLabel }}</span></label>
+  @if (isInvalid('consent')) { <p class="validation-message full" role="alert">{{ content().consentError }}</p> }
+  <div class="form-foot full"><button class="button" type="submit" [disabled]="isSubmitting()">{{ isSubmitting() ? content().submittingLabel : content().submitLabel }} <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite" [class.error]="submissionState() === 'error'">{{ statusMessage() }}</p></div>
+  <p class="privacy-note full">{{ content().privacyNote }}</p>
+</form>

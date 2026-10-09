@@ -1,0 +1,8 @@
+.closing-cta { padding: 53px 0; background: var(--accent); color: white; }
+.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.cta-inner h2 { margin: 0; font: 500 40px/1.15 var(--serif); }
+.cta-inner p { margin: 7px 0 0; color: #f7e7dd; font-size: 11px; }
+.cta-inner .button { flex: 0 0 auto; background: var(--yellow); color: var(--ink); }
+.cta-inner .button:hover { background: #f6d994; }
+@media (max-width: 900px) { .cta-inner h2 { font-size: 36px; } }
+@media (max-width: 680px) { .cta-inner { align-items: flex-start; flex-direction: column; } .cta-inner h2 { font-size: 31px; } }

@@ -1,0 +1,6 @@
+.not-found { min-height: 57vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding-block: 70px; }
+.eyebrow { color: var(--accent-dark); font-size: 11px; font-weight: 700; }
+.not-found h1 { max-width: 700px; margin: 0; font: 500 52px/1.1 var(--serif); }
+.not-found p { color: var(--muted); font-size: 13px; }
+.button { display: inline-flex; min-height: 43px; align-items: center; padding: 0 16px; border-radius: 3px; background: var(--accent); color: white; font-size: 10px; font-weight: 700; }
+@media (max-width: 650px) { .not-found h1 { font-size: 40px; } }

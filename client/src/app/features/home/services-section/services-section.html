@@ -1,0 +1,10 @@
+<section class="services-section" id="services">
+  <div class="shell">
+    <div class="section-head"><div><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2></div><p>{{ content().introduction }}</p></div>
+    <div class="services-grid">
+      @for (service of content().items; track service.title; let index = $index) {
+        <article class="service"><span class="service-index">{{ (index + 1).toString().padStart(2, '0') }}</span><h3>{{ service.title }}</h3><p>{{ service.description }}</p></article>
+      }
+    </div>
+  </div>
+</section>

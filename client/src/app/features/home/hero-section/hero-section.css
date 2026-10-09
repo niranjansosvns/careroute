@@ -1,0 +1,41 @@
+.hero { position: relative; overflow: hidden; padding: 73px 0 40px; background: radial-gradient(ellipse at 17% 34%, #f4e8e2 0, transparent 42%), var(--paper); }
+.hero::after { position: absolute; right: -120px; bottom: -240px; width: 490px; height: 490px; border: 1px solid rgba(96,123,105,.16); border-radius: 50%; content: ""; box-shadow: 0 0 0 40px rgba(96,123,105,.025), 0 0 0 80px rgba(96,123,105,.025); pointer-events: none; }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(36px, 7vw, 94px); }
+.eyebrow { margin: 0 0 16px; color: var(--accent-dark); font-size: 10px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+h1 { max-width: 650px; margin: 0; font: 500 66px/1.04 var(--serif); }
+h1 em { color: var(--accent); font-weight: 500; }
+.hero-lede { max-width: 530px; margin: 24px 0 27px; color: #52615c; font: 500 17px/1.75 var(--serif); }
+.hero-actions { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; }
+.text-link { display: inline-flex; align-items: center; gap: 8px; padding: 8px 2px; color: var(--accent-dark); font-size: 11px; font-weight: 700; }
+.hero-note { display: flex; align-items: center; gap: 9px; margin: 25px 0 0; color: var(--muted); font-size: 10px; }
+.note-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage-deep); }
+.hero-visual { position: relative; min-height: 445px; margin: 0 20px 20px 0; overflow: visible; border-radius: 190px 190px 5px 5px; background: #d8e6dd; }
+.hero-visual > img { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; object-fit: cover; object-position: center; }
+.hero-visual::after { position: absolute; inset: 48% 0 0; border-radius: 0 0 5px 5px; background: linear-gradient(transparent, rgba(16,39,35,.52)); content: ""; pointer-events: none; }
+.image-caption { position: absolute; z-index: 1; right: 23px; bottom: 25px; left: 24px; color: white; }
+.image-caption span { display: block; margin-bottom: 5px; font-size: 9px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+.image-caption strong { font: 500 24px/1.2 var(--serif); }
+.floating-note { position: absolute; z-index: 2; right: -19px; bottom: -18px; display: flex; align-items: center; gap: 11px; width: 218px; padding: 14px; border: 1px solid rgba(41,45,43,.08); border-radius: 3px; background: var(--white); box-shadow: 0 12px 35px rgba(41,45,43,.1); }
+.note-symbol { width: 36px; height: 36px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: var(--sage); color: var(--ink); font-size: 21px; }
+.floating-note b, .floating-note small { display: block; }
+.floating-note b { font-size: 10px; }
+.floating-note small { color: var(--muted); font-size: 9px; }
+.proof-strip { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 49px; padding-top: 20px; border-top: 1px solid var(--line); }
+.proof-strip > div { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.proof-strip strong { font: 600 20px/1.2 var(--serif); }
+.proof-strip span { color: var(--muted); font-size: 9px; letter-spacing: .8px; text-transform: uppercase; }
+.enter { animation: enter .7s both; }
+@keyframes enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { .hero-grid { gap: 34px; } .hero-visual { min-height: 380px; } h1 { font-size: 58px; } }
+@media (max-width: 680px) {
+  .hero { padding: 45px 0 32px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 27px; }
+  h1 { max-width: 550px; font-size: 46px; }
+  .hero-lede { margin: 17px 0 21px; font-size: 15px; }
+  .hero-visual { min-height: 350px; margin: 0 11px 14px 0; border-radius: 155px 155px 4px 4px; }
+  .image-caption { right: 18px; bottom: 21px; left: 19px; }
+  .image-caption strong { font-size: 21px; }
+  .floating-note { right: -10px; bottom: -13px; width: 195px; padding: 11px; }
+  .proof-strip { grid-template-columns: 1fr; gap: 11px; margin-top: 28px; padding-top: 15px; }
+}
+@media (prefers-reduced-motion: reduce) { .enter { animation-duration: .01ms; } }

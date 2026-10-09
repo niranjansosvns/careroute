@@ -1,0 +1,10 @@
+<section class="values-section">
+  <div class="shell">
+    <div class="section-head"><div><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2></div><p>{{ content().introduction }}</p></div>
+    <div class="values-grid">
+      @for (value of content().items; track value.title; let index = $index) {
+        <article class="value"><span class="value-no">{{ (index + 1).toString().padStart(2, '0') }}</span><div><h3>{{ value.title }}</h3><p>{{ value.description }}</p></div></article>
+      }
+    </div>
+  </div>
+</section>

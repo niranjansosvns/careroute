@@ -1,0 +1,12 @@
+node_modules/
+client/node_modules/
+client/dist/
+client/.angular/
+client/public/assets/care-route/
+server/node_modules/
+server/data/*.sqlite
+server/data/*.sqlite-shm
+server/data/*.sqlite-wal
+.env
+server/.env
+.DS_Store

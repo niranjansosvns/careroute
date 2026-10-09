@@ -1,0 +1,159 @@
+{
+  "catalogs": {
+    "treatments": {
+      "label": "Treatments",
+      "description": "Browse broad care areas and prepare questions for a qualified provider.",
+      "items": [
+        { "slug": "heart-and-vascular-care", "title": "Heart and vascular care", "category": "Cardiology", "summary": "Explore cardiovascular assessment, interventional care and surgical consultation pathways.", "location": "Multiple locations", "highlights": ["Provider-led assessment", "Availability varies by case", "Compare hospitals before deciding"], "details": ["This listing is a starting point for a conversation with a qualified cardiovascular specialist.", "A treating provider determines whether a treatment is appropriate after reviewing the individual case."], "sampleData": true },
+        { "slug": "cancer-care", "title": "Cancer care", "category": "Oncology", "summary": "Find information about multidisciplinary oncology consultation and treatment coordination.", "location": "Multiple locations", "highlights": ["Medical and surgical oncology", "Treatment plans are case-specific", "Written provider estimates recommended"], "details": ["Cancer care can involve multiple specialties. Request a clinical review from a qualified hospital team.", "Published summaries do not replace diagnosis, staging or clinician guidance."], "sampleData": true },
+        { "slug": "orthopaedics-and-spine", "title": "Orthopaedics and spine", "category": "Musculoskeletal", "summary": "Explore consultation pathways for joint, bone and spine concerns.", "location": "Multiple locations", "highlights": ["Surgical and non-surgical assessment", "Rehabilitation needs may vary", "Bring questions to your clinician"], "details": ["A specialist determines appropriate investigations and treatment options based on a clinical examination and records.", "Recovery timelines and outcomes differ between individuals."], "sampleData": true },
+        { "slug": "transplant-programmes", "title": "Transplant programmes", "category": "Transplant", "summary": "Understand the initial coordination steps for transplant programme enquiries.", "location": "Hospital dependent", "highlights": ["Eligibility is hospital determined", "Legal and donor requirements apply", "No admission or outcome guarantee"], "details": ["Transplant care involves clinical, legal and hospital eligibility checks.", "A coordinator cannot determine eligibility or replace advice from a transplant team."], "sampleData": true },
+        { "slug": "neurology-and-neurosurgery", "title": "Neurology and neurosurgery", "category": "Neurosciences", "summary": "Explore care coordination for nervous-system assessment and specialist consultation.", "location": "Multiple locations", "highlights": ["Specialist review required", "Urgent symptoms need emergency care", "Share records only through approved secure channels"], "details": ["A qualified clinician should review symptoms, examination findings and relevant records before discussing treatment options."], "sampleData": true },
+        { "slug": "womens-and-childrens-health", "title": "Women’s and children’s health", "category": "Family health", "summary": "Find coordination information for selected maternity, paediatric and fertility services.", "location": "Provider dependent", "highlights": ["Age and case requirements vary", "Confidentiality should be discussed with providers", "Clinical decisions remain provider-led"], "details": ["Service eligibility and availability depend on the provider, patient needs and applicable requirements."], "sampleData": true }
+      ]
+    },
+    "procedures": {
+      "label": "Procedures",
+      "description": "Review general procedure pathways. Only a clinician can advise whether a procedure is appropriate.",
+      "items": [
+        { "slug": "joint-replacement-consultation", "title": "Joint replacement consultation", "category": "Orthopaedics", "summary": "Coordinate an orthopaedic consultation about joint symptoms and available options.", "highlights": ["Clinical assessment required", "Implant and care plans vary", "Request a current written estimate"], "details": ["A clinician considers medical history, examination and imaging before recommending a treatment plan."], "sampleData": true },
+        { "slug": "cardiac-surgery-consultation", "title": "Cardiac surgery consultation", "category": "Cardiology", "summary": "Arrange a specialist discussion about cardiovascular surgical options.", "highlights": ["Specialist review required", "Hospital admission is not guaranteed", "Urgent symptoms require emergency services"], "details": ["This page describes coordination only and does not recommend a particular operation."], "sampleData": true },
+        { "slug": "robot-assisted-surgery", "title": "Robot-assisted surgery consultation", "category": "Surgical care", "summary": "Request information about provider assessment for selected robot-assisted procedures.", "highlights": ["Not suitable for every case", "Technology varies by provider", "Compare benefits and alternatives with a surgeon"], "details": ["The treating surgeon determines whether a robot-assisted approach is clinically appropriate."], "sampleData": true },
+        { "slug": "radiation-therapy-consultation", "title": "Radiation therapy consultation", "category": "Oncology", "summary": "Coordinate a discussion with an oncology team about radiation treatment planning.", "highlights": ["A cancer team reviews each case", "Treatment schedules vary", "Confirm cost and availability with the provider"], "details": ["The type, timing and risks of radiation treatment are determined by qualified oncology professionals."], "sampleData": true },
+        { "slug": "kidney-transplant-assessment", "title": "Kidney transplant assessment", "category": "Transplant", "summary": "Learn how to request an initial assessment from a transplant programme.", "highlights": ["Eligibility checks apply", "Donor and legal requirements vary", "Only the transplant team determines next steps"], "details": ["No online enquiry can confirm transplant eligibility or guarantee a transplant."], "sampleData": true }
+      ]
+    },
+    "treatment-costs": {
+      "label": "Treatment costs",
+      "description": "Costs depend on a reviewed case and provider quotation. No price on this demonstration site is a medical quote.",
+      "items": [
+        { "slug": "cardiac-care-estimate", "title": "Cardiac care estimate", "category": "Cardiology", "summary": "Request a provider-issued estimate after specialist review.", "displayNote": "Quote required from provider", "highlights": ["No fixed price published", "Tests and length of stay can change totals", "Ask what is included and excluded"], "details": ["A current estimate should come directly from the treating hospital after reviewing the proposed care plan."], "sampleData": true },
+        { "slug": "orthopaedic-care-estimate", "title": "Orthopaedic care estimate", "category": "Orthopaedics", "summary": "Compare written estimates for the proposed procedure and recovery plan.", "displayNote": "Quote required from provider", "highlights": ["Procedure and implant affect cost", "Rehabilitation may be separate", "Confirm currency and validity period"], "details": ["Costs depend on the clinical plan, provider, room category and other individual requirements."], "sampleData": true },
+        { "slug": "oncology-care-estimate", "title": "Oncology care estimate", "category": "Oncology", "summary": "Ask a hospital team for an estimate based on the reviewed diagnosis and plan.", "displayNote": "Quote required from provider", "highlights": ["Treatment stages affect totals", "Medicines and tests may vary", "Ask about follow-up costs"], "details": ["Only the treating provider can prepare a case-specific estimate. This listing is not a price offer."], "sampleData": true },
+        { "slug": "transplant-care-estimate", "title": "Transplant care estimate", "category": "Transplant", "summary": "Request a written estimate after programme and eligibility review.", "displayNote": "Quote required from provider", "highlights": ["Eligibility and legal checks apply", "Donor-related costs may differ", "No admission or outcome guarantee"], "details": ["Transplant estimates can change after clinical, donor, legal and hospital review."], "sampleData": true }
+      ]
+    },
+    "hospitals": {
+      "label": "Hospitals",
+      "description": "Sample directory entries demonstrate filtering and detail pages. They are fictional and do not represent actual providers.",
+      "items": [
+        { "slug": "northstar-medical-centre", "title": "Northstar Medical Centre", "category": "Multispecialty", "location": "New Delhi", "summary": "Demonstration hospital profile for directory layout and comparison workflows.", "highlights": ["Sample listing only", "Credentials not verified", "No affiliation or availability implied"], "details": ["Replace this sample with verified provider information, services, contact channels and accreditation references before publishing."], "sampleData": true },
+        { "slug": "harborview-specialty-hospital", "title": "Harborview Specialty Hospital", "category": "Cardiac and oncology", "location": "Mumbai", "summary": "Fictional sample profile for a provider directory detail view.", "highlights": ["Sample listing only", "No admission guarantee", "Verify all details independently"], "details": ["This fictional profile is provided to demonstrate the directory interface only."], "sampleData": true },
+        { "slug": "greenfield-care-institute", "title": "Greenfield Care Institute", "category": "Orthopaedics and rehabilitation", "location": "Chennai", "summary": "Sample provider entry with location-based browsing and comparison fields.", "highlights": ["Fictional sample", "Availability not verified", "No clinical claims"], "details": ["Replace with approved, current and verified data before launch."], "sampleData": true },
+        { "slug": "summit-international-hospital", "title": "Summit International Hospital", "category": "Transplant and neurosciences", "location": "Hyderabad", "summary": "Fictional example profile illustrating a hospital detail route.", "highlights": ["Fictional sample", "No affiliation implied", "Confirm services with providers"], "details": ["Provider inclusion should be based on verified information and clear listing terms."], "sampleData": true }
+      ]
+    },
+    "doctors": {
+      "label": "Doctors",
+      "description": "All profiles here are fictional examples. Verify real clinicians, credentials and current availability before publishing.",
+      "items": [
+        { "slug": "sample-cardiology-profile-01", "title": "Sample Cardiology Profile 01", "category": "Cardiology", "location": "New Delhi", "summary": "Fictional clinician record for demonstrating specialty filters and profile navigation.", "highlights": ["Not a real clinician", "No credentials verified", "Not accepting appointments"], "details": ["Replace this entry with a real profile only after verifying identity, qualifications, hospital affiliation and consent to publish."], "sampleData": true },
+        { "slug": "sample-oncology-profile-02", "title": "Sample Oncology Profile 02", "category": "Oncology", "location": "Mumbai", "summary": "Fictional sample profile showing how a specialist record can be displayed.", "highlights": ["Not a real clinician", "No credentials verified", "Not accepting appointments"], "details": ["Do not use this demonstration record to represent a real person."], "sampleData": true },
+        { "slug": "sample-orthopaedics-profile-03", "title": "Sample Orthopaedics Profile 03", "category": "Orthopaedics", "location": "Chennai", "summary": "Example clinician listing for directory search and detail-view development.", "highlights": ["Not a real clinician", "No credentials verified", "Not accepting appointments"], "details": ["All profile attributes must be confirmed with the clinician and institution before use."], "sampleData": true },
+        { "slug": "sample-neurology-profile-04", "title": "Sample Neurology Profile 04", "category": "Neurology", "location": "Hyderabad", "summary": "Fictional specialist entry for testing the doctor directory workflow.", "highlights": ["Not a real clinician", "No credentials verified", "Not accepting appointments"], "details": ["This placeholder demonstrates the interface only and cannot be used for care decisions."], "sampleData": true }
+      ]
+    },
+    "services": {
+      "label": "Services",
+      "description": "Practical coordination services surrounding a patient’s care and travel planning.",
+      "items": [
+        { "slug": "patient-care-support", "title": "Patient care support", "category": "Care coordination", "summary": "A dedicated contact can help patients and families understand practical next steps.", "highlights": ["Before, during and after the visit", "Non-clinical coordination", "Patient choice remains central"], "details": ["Support may include communication and journey planning. It does not include diagnosis or treatment advice."], "sampleData": true },
+        { "slug": "appointment-coordination", "title": "Appointment coordination", "category": "Care coordination", "summary": "Coordinate introductory appointments with relevant specialties and providers.", "highlights": ["Provider availability varies", "Appointments require confirmation", "Clinical decisions stay with providers"], "details": ["A coordinator can assist with logistics but cannot guarantee an appointment or admission."], "sampleData": true },
+        { "slug": "medical-visa-guidance", "title": "Medical visa guidance", "category": "Travel planning", "summary": "Receive practical guidance about provider invitation requirements and travel documents.", "highlights": ["Rules can change", "Government decisions are independent", "Confirm current requirements"], "details": ["This general coordination information is not immigration or legal advice. Applicants should check current official requirements."], "sampleData": true },
+        { "slug": "travel-and-transfers", "title": "Travel and local transfers", "category": "Travel planning", "summary": "Plan travel timing and local transfers around confirmed provider appointments.", "highlights": ["Schedules depend on availability", "Patients arrange their own travel decisions", "Emergency transport is not included"], "details": ["Travel arrangements are subject to third-party availability and should be confirmed directly."], "sampleData": true },
+        { "slug": "accommodation-assistance", "title": "Accommodation assistance", "category": "Travel planning", "summary": "Compare accommodation options near a selected care provider.", "highlights": ["Options vary by city", "Accessibility should be confirmed", "Bookings depend on availability"], "details": ["Accommodation suggestions are not medical recommendations or guarantees of suitability."], "sampleData": true },
+        { "slug": "hospital-assistance", "title": "Hospital assistance", "category": "Care coordination", "summary": "Get practical help navigating appointments and hospital administration.", "highlights": ["Hospital rules vary", "Admission decisions remain with the hospital", "Keep provider contacts available"], "details": ["A coordinator may help with wayfinding and communication but does not act as a clinical representative."], "sampleData": true },
+        { "slug": "interpreter-support", "title": "Interpreter support", "category": "Communication", "summary": "Ask about language support for conversations with providers.", "highlights": ["Language availability varies", "Confirm qualifications", "Clinical translation needs special care"], "details": ["Interpreter arrangements should be confirmed with the provider before appointments."], "sampleData": true },
+        { "slug": "medical-records-coordination", "title": "Secure records coordination", "category": "Communication", "summary": "Use an approved secure channel when a provider requests medical records.", "highlights": ["Do not email sensitive files casually", "Confirm recipient and purpose", "Share only what is necessary"], "details": ["The public enquiry form does not accept record uploads. Ask the provider for its approved secure process."], "sampleData": true }
+      ]
+    },
+    "destinations": {
+      "label": "Destinations",
+      "description": "Explore sample city pages for practical travel planning. Provider options and travel conditions must be checked independently.",
+      "items": [
+        { "slug": "new-delhi", "title": "New Delhi", "category": "North India", "location": "Delhi", "summary": "A destination overview for planning appointments, local transport and accommodation.", "highlights": ["Sample destination content", "Travel conditions change", "Provider selection is case-specific"], "details": ["Confirm local travel, accessibility, accommodation and provider arrangements before booking."], "sampleData": true },
+        { "slug": "mumbai", "title": "Mumbai", "category": "West India", "location": "Maharashtra", "summary": "A sample destination page to support city-level medical travel discovery.", "highlights": ["Sample destination content", "Confirm arrival details", "Allow flexibility for appointments"], "details": ["City information is general and should be supplemented with current local guidance."], "sampleData": true },
+        { "slug": "chennai", "title": "Chennai", "category": "South India", "location": "Tamil Nadu", "summary": "A sample destination overview for coordinating a potential care visit.", "highlights": ["Sample destination content", "Confirm provider location", "Plan accessible transport"], "details": ["This page does not endorse a provider or guarantee service availability."], "sampleData": true },
+        { "slug": "hyderabad", "title": "Hyderabad", "category": "South India", "location": "Telangana", "summary": "A demonstration destination entry for medical travel planning.", "highlights": ["Sample destination content", "Confirm travel requirements", "Provider location matters"], "details": ["Use current official travel and local transport information when planning a visit."], "sampleData": true }
+      ]
+    },
+    "resources": {
+      "label": "Resources",
+      "description": "General planning resources. They are informational only and are not a substitute for professional advice.",
+      "items": [
+        { "slug": "first-enquiry-checklist", "title": "First enquiry checklist", "category": "Planning", "summary": "Prepare questions and contact preferences before speaking with a coordinator.", "highlights": ["State your general care area", "Avoid sending sensitive documents through public forms", "Note preferred contact times"], "details": ["A short checklist can make an introductory coordination conversation more useful."], "sampleData": true },
+        { "slug": "medical-travel-planning", "title": "Medical travel planning guide", "category": "Travel", "summary": "Consider appointments, travel timing, accessibility and support-person needs.", "highlights": ["Wait for appointment confirmation", "Check current travel rules", "Plan for schedule changes"], "details": ["This guide is general planning information and does not guarantee appointments, visas or outcomes."], "sampleData": true },
+        { "slug": "comparing-provider-estimates", "title": "Comparing provider estimates", "category": "Costs", "summary": "Questions to ask when comparing written estimates from hospitals.", "highlights": ["Confirm what is included", "Ask how long the estimate is valid", "Request currency and exclusions in writing"], "details": ["A provider-issued estimate may change after examination, tests or changes to the treatment plan."], "sampleData": true },
+        { "slug": "questions-for-a-specialist", "title": "Questions for a specialist", "category": "Appointments", "summary": "Organize questions for a consultation with a qualified clinician.", "highlights": ["Ask about alternatives", "Discuss risks and recovery", "Confirm follow-up arrangements"], "details": ["Only a clinician familiar with the case can answer individualized medical questions."], "sampleData": true }
+      ]
+    }
+  },
+  "pages": {
+    "about": {
+      "slug": "about", "eyebrow": "About CareRoute", "title": "Practical coordination, centred on patient choice.", "summary": "CareRoute is a demonstration medical-travel coordination service model.",
+      "sections": [
+        { "heading": "Our role", "paragraphs": ["We help organize the practical steps around exploring care, including information gathering and travel coordination.", "We do not diagnose conditions, provide treatment or determine clinical suitability."], "bullets": ["Clear coordination", "Provider-led clinical decisions", "Patient choice"] },
+        { "heading": "Our information", "paragraphs": ["Directory entries on this demo are fictional sample content. Replace them with reviewed and verified information before public launch."] }
+      ]
+    },
+    "patient-journey": {
+      "slug": "patient-journey", "eyebrow": "How it works", "title": "A coordinated path from enquiry to follow-up.", "summary": "Understand the practical stages of an international care enquiry.",
+      "sections": [
+        { "heading": "1. Share a general enquiry", "paragraphs": ["Tell us which specialty or type of coordination you are looking for. Do not use the general enquiry form to send medical records or passport information."] },
+        { "heading": "2. Explore provider options", "paragraphs": ["A coordinator can help identify relevant provider contacts. The treating provider reviews clinical information and determines eligibility."] },
+        { "heading": "3. Plan travel after confirmation", "paragraphs": ["Confirm appointments, requirements, travel documents and accommodation before making bookings."] },
+        { "heading": "4. Coordinate practical support", "paragraphs": ["Agree who to contact for arrival, appointments and follow-up. Medical decisions remain with qualified clinicians."] }
+      ]
+    },
+    "medical-visa": {
+      "slug": "medical-visa", "eyebrow": "Travel preparation", "title": "Medical travel documentation guide.", "summary": "General reminders for preparing questions about travel documents.",
+      "sections": [
+        { "heading": "Check official requirements", "paragraphs": ["Visa rules and document requirements can change. Consult the relevant government or consular source for current instructions."] },
+        { "heading": "Ask the provider about letters", "paragraphs": ["If a hospital invitation or appointment letter is needed, confirm the request process directly with the provider."] },
+        { "heading": "Important limitation", "paragraphs": ["This page is not immigration or legal advice. Visa decisions are made by the relevant authorities and cannot be guaranteed by a coordinator."] }
+      ]
+    },
+    "why-india": {
+      "slug": "why-india", "eyebrow": "Destination planning", "title": "Compare care options with your priorities in mind.", "summary": "A neutral starting point for evaluating international care destinations.",
+      "sections": [
+        { "heading": "Compare the complete journey", "paragraphs": ["When comparing destinations, consider clinical suitability, provider credentials, communication, travel logistics and follow-up arrangements."] },
+        { "heading": "Ask for case-specific information", "paragraphs": ["Availability, costs and care plans depend on the provider and individual case. Request written answers from the treating institution."] },
+        { "heading": "Make an informed decision", "paragraphs": ["This site does not claim that one country or provider is appropriate for every patient. Discuss medical decisions with qualified clinicians."] }
+      ]
+    },
+    "faq": {
+      "slug": "faq", "eyebrow": "Common questions", "title": "Questions about care coordination.", "summary": "General information about the role and limits of a coordinator.",
+      "sections": [
+        { "heading": "Does CareRoute provide medical treatment?", "paragraphs": ["No. Medical care is provided by licensed healthcare professionals and institutions."] },
+        { "heading": "Can a treatment cost or outcome be guaranteed?", "paragraphs": ["No. Ask the treating provider for a current written estimate and clinical guidance. Outcomes vary between individuals."] },
+        { "heading": "Can I send records through the enquiry form?", "paragraphs": ["No. Use only a provider-approved secure channel if records are requested."] }
+      ]
+    },
+    "contact": {
+      "slug": "contact", "eyebrow": "Contact", "title": "Start with a general question.", "summary": "Use the enquiry form for non-urgent care coordination questions.",
+      "sections": [
+        { "heading": "Not an emergency service", "paragraphs": ["For urgent or emergency symptoms, contact your local emergency services or a qualified healthcare professional immediately."] }
+      ]
+    },
+    "privacy": {
+      "slug": "privacy", "eyebrow": "Privacy", "title": "Privacy notice placeholder.", "summary": "This sample notice must be replaced with a reviewed policy before launch.",
+      "sections": [ { "heading": "Demo environment", "paragraphs": ["The local starter stores submitted enquiry contact details in SQLite. It is not configured for production health-data collection.", "Publish a reviewed privacy notice describing purpose, lawful basis, retention, data access and contact procedures before collecting real enquiries."] } ]
+    },
+    "terms": {
+      "slug": "terms", "eyebrow": "Terms", "title": "Terms placeholder.", "summary": "Replace this demonstration text with reviewed terms before launch.",
+      "sections": [ { "heading": "Informational use", "paragraphs": ["This demo provides general coordination information only and is not medical, legal or immigration advice.", "A qualified professional should advise on individual clinical questions."] } ]
+    },
+    "medical-disclaimer": {
+      "slug": "medical-disclaimer", "eyebrow": "Medical disclaimer", "title": "Clinical decisions belong to qualified providers.", "summary": "CareRoute coordinates practical information and does not provide medical care.",
+      "sections": [ { "heading": "No diagnosis or treatment", "paragraphs": ["Website information is general and cannot be used to diagnose or treat a condition.", "Always consult a qualified healthcare professional about diagnosis, treatment, risks and alternatives. For emergencies, contact local emergency services."] } ]
+    },
+    "editorial-policy": {
+      "slug": "editorial-policy", "eyebrow": "Editorial standards", "title": "How information should be reviewed.", "summary": "A sample editorial framework for publishing accurate directory content.",
+      "sections": [ { "heading": "Verification", "paragraphs": ["Verify provider identity, credentials, services and contact details with primary sources before publication.", "Mark estimates, sample data and update dates clearly. Correct outdated information promptly."] } ]
+    },
+    "secure-records": {
+      "slug": "secure-records", "eyebrow": "Records", "title": "Use a secure channel for sensitive documents.", "summary": "The public enquiry form does not accept uploads or passport details.",
+      "sections": [ { "heading": "Before sharing records", "paragraphs": ["Ask the receiving hospital or provider for its approved secure transfer method.", "Verify the recipient and share only the information needed for the stated purpose."] } ]
+    }
+  }
+}

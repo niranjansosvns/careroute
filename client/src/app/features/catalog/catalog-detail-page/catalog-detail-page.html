@@ -1,0 +1,10 @@
+<main class="detail-page shell">
+  <a class="back-link" [routerLink]="['/directory', catalogPage().collection]">← {{ pageContent().portalUi.backToDirectoryLabel }} · {{ catalogPage().label }}</a>
+  <header class="detail-heading"><p class="eyebrow">{{ catalogPage().item.category }}</p><h1>{{ catalogPage().item.title }}</h1><p>{{ catalogPage().item.summary }}</p>@if (catalogPage().item.location) { <span>{{ pageContent().portalUi.locationLabel }} · {{ catalogPage().item.location }}</span> }</header>
+  @if (catalogPage().item.sampleData) { <p class="demo-notice">{{ pageContent().portalUi.demoNotice }}</p> }
+  @if (catalogPage().item.displayNote) { <p class="display-note">{{ catalogPage().item.displayNote }}</p> }
+  <div class="detail-columns">
+    <section class="detail-body"><h2>{{ pageContent().portalUi.detailsHeading }}</h2>@for (paragraph of catalogPage().item.details; track paragraph) { <p>{{ paragraph }}</p> }</section>
+    <aside class="detail-aside"><h2>{{ pageContent().portalUi.highlightsHeading }}</h2><ul>@for (highlight of catalogPage().item.highlights; track highlight) { <li>{{ highlight }}</li> }</ul><a class="button" routerLink="/pages/contact">{{ pageContent().portalUi.requestInformationLabel }} <span aria-hidden="true">↗</span></a></aside>
+  </div>
+</main>

@@ -1,0 +1,8 @@
+<section class="enquiry-section" id="enquiry">
+  <div class="shell enquiry-grid">
+    <div class="enquiry-copy"><p class="eyebrow">{{ content().eyebrow }}</p><h2>{{ content().title }}</h2><p>{{ content().description }}</p>
+      <div class="contact-lines">@for (contact of content().contacts; track contact.href) { <a [href]="contact.href"><b>{{ contact.label }}</b><span>{{ contact.detail }}</span></a> }</div>
+    </div>
+    <app-enquiry-form [content]="content().form" />
+  </div>
+</section>

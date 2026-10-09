@@ -1,0 +1,17 @@
+.site-footer { padding: 46px 0 20px; background: #202725; color: white; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 55px; padding-bottom: 35px; }
+.footer-brand .brand-tag { color: #c2cec6; }
+.brand { display: inline-flex; align-items: center; gap: 11px; }
+.brand-mark { width: 41px; height: 41px; display: grid; place-items: center; border-radius: 50% 50% 50% 12px; background: var(--accent); color: white; font-size: 27px; transform: rotate(-8deg); }
+.brand-name { display: block; font: 600 21px/1 var(--serif); }
+.brand-tag { display: block; margin-top: 5px; color: var(--muted); font-size: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.footer-about { max-width: 345px; margin: 17px 0 0; color: #c2cec6; font-size: 10px; }
+.footer-col h3 { margin: 0 0 12px; color: var(--yellow); font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; }
+.footer-col a { display: block; width: fit-content; margin: 7px 0; color: #e1e7e2; font-size: 10px; }
+.footer-col a:hover { color: var(--yellow); }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,.17); color: #c2cec6; font-size: 8px; }
+@media (max-width: 680px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; gap: 5px; }
+}

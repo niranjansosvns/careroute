@@ -1,0 +1,20 @@
+.values-section { padding: 88px 0; background: var(--white); }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 38px; }
+.section-head h2 { max-width: 640px; margin: 0; font: 500 48px/1.12 var(--serif); }
+.section-head > p { max-width: 330px; margin: 0 0 3px; color: var(--muted); font-size: 12px; }
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 40px; }
+.value { display: flex; gap: 13px; }
+.value-no { width: 29px; height: 29px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: var(--sage); color: var(--ink); font-size: 9px; font-weight: 700; }
+.value h3 { margin: 0 0 4px; font: 600 15px/1.35 var(--serif); }
+.value p { margin: 0; color: var(--muted); font-size: 11px; }
+@media (max-width: 900px) { .section-head h2 { font-size: 43px; } }
+@media (max-width: 680px) {
+  .values-section { padding: 62px 0; }
+  .section-head { display: block; margin-bottom: 26px; }
+  .section-head h2 { font-size: 38px; }
+  .section-head > p { margin-top: 12px; }
+  .values-grid { grid-template-columns: 1fr 1fr; gap: 21px 14px; }
+  .value { gap: 8px; }
+  .value h3 { font-size: 13px; }
+  .value p { font-size: 9px; }
+}
